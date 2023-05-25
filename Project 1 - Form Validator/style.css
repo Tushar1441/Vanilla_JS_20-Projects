@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 40px;
+  width: 340px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  color: #777;
+}
+
+.container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+  font-family: "Lato", sans-serif;
+}
+
+.container input {
+  display: block;
+  width: 100%;
+  margin: 45px 0px;
+  padding: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: inherit;
+  border: 1px solid #c7c6c6;
+  border-radius: 3px;
+  color: #686868;
+}
+
+.container input:focus,
+.container input:valid
+{
+  outline:none;
+}
+
+.input-field{
+  position: relative;
+}
+
+
+.before-input {
+  position: absolute;
+  font-size: 14px;
+  color: #5e5d5d;
+  font-family: 'Lato',sans-serif;
+  top: -20px;
+
+}
+
+.after-input{
+  position: absolute;
+  font-size: 11px;
+  color: red;
+  font-family: inherit;
+  bottom: -14px;
+  display: none;
+}
+
+
+.requirements .after-input{
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  background-color: steelblue;
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}

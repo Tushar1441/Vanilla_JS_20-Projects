@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Form Validator</title>
+</head>
+<body>
+  <div class="container">
+    <form >
+      <h3>Register With Us</h3>
+
+      <div class="input-field ">
+        <label class="before-input">Username </label> <label class="after-input">Username must be atleast 3 characters </label>  
+        <input type="text" placeholder="Enter Username" required> 
+      </div>
+
+      <div class="input-field">
+      <label class="before-input">Email </label> 
+      <label class="after-input">Email is not valid </label>
+      <input type="email" placeholder="Enter Email" required>
+    </div>
+
+      <div class="input-field ">
+      <label class="before-input">Password </label>
+      <label class="after-input">Password must be at least 6 characters </label>
+      <input type="password" placeholder="Enter password" required>
+    </div>
+
+      <div class="input-field">      
+      <label class="before-input">Confirm Password </label> 
+      <label class="after-input">Password2 is required </label>
+      <input type="text" placeholder="Enter Password Again" required>
+      </div>
+
+      <button class="btn" type="submit"> Submit </button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
